@@ -108,6 +108,6 @@ public class Main {
                 System.out.println("Такого месяца не существует");
         }
         System.out.println();
-
+        System.out.println("ДЗ5 выполнено");
     }
 }
