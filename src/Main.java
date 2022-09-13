@@ -44,14 +44,8 @@ public class Main {
         // является ли год високосным или нет
         // високосным является каждый четвертый год, но не является каждый 100. Также високосным является каждый 400 год
         int year = 2021;
-        if (year % 4 == 0 && year % 100 != 0) {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным");
-        } else if (year % 4 == 0 && year % 100 == 0) {
-            if (year % 400 == 0) {
-                System.out.println(year + " год является високосным");
-            } else {
-                System.out.println(year + " год не является високосным");
-            }
         } else {
             System.out.println(year + " год не является високосным");
         }
@@ -108,6 +102,6 @@ public class Main {
                 System.out.println("Такого месяца не существует");
         }
         System.out.println();
-
+        System.out.println("ДЗ5 выполнено");
     }
 }
